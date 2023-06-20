@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Add new blog form</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Please fill the form below</h1>
+    <form action="/add" method="post">
+        <label for="author_name">Author Name: <input type="text" id="author_name" name="author_name"></label><br>
+        <label for="title">Tile: <input type="text" id="title" name="title"></label><br>
+        <label for="content">Content: <input type="text" id="content" name="content"></label><br>
+        <input type="submit">
+    </form>
+</body>
+</html>
